@@ -14,7 +14,7 @@ public struct SandboxTestersClearPurchaseHistoryRequestV2: Codable, Hashable, Id
         case sandboxTestersClearPurchaseHistoryRequest
     }
 
-    public init(type: `Type`, id: String, links: ResourceLinks) {
+    public init(type: `Type` = .sandboxTestersClearPurchaseHistoryRequest, id: String, links: ResourceLinks) {
         self.type = type
         self.id = id
         self.links = links

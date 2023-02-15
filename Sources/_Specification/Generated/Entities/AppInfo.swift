@@ -85,7 +85,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case apps
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .apps, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -124,7 +124,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case ageRatingDeclarations
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .ageRatingDeclarations, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -164,7 +164,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appInfoLocalizations
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appInfoLocalizations, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -204,7 +204,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appCategories
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appCategories, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -243,7 +243,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appCategories
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appCategories, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -282,7 +282,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appCategories
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appCategories, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -321,7 +321,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appCategories
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appCategories, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -360,7 +360,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appCategories
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appCategories, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -399,7 +399,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
                     case appCategories
                 }
 
-                public init(type: `Type`, id: String) {
+                public init(type: `Type` = .appCategories, id: String) {
                     self.type = type
                     self.id = id
                 }
@@ -424,7 +424,7 @@ public struct AppInfo: Codable, Hashable, Identifiable {
         }
     }
 
-    public init(type: `Type`, id: String, attributes: Attributes? = nil, relationships: Relationships? = nil, links: ResourceLinks) {
+    public init(type: `Type` = .appInfos, id: String, attributes: Attributes? = nil, relationships: Relationships? = nil, links: ResourceLinks) {
         self.type = type
         self.id = id
         self.attributes = attributes
